@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<!--
+	Lost stars.
+-->
+<html>
+	<head>
+		<title>LostStars</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body id="top">
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="./logo.jpeg" alt="" /></a>
+					<h2><strong>Lost Stars</strong> </h2>
+					<h1> We Listen,We share</h1>
+					<button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+					<div id="id01" class="modal">
+	  
+		  				<form class="modal-content animate" action="/login" method="POST">
+						    <div class="imgcontainer">
+						      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						      <img src="logo.jpeg" alt="Avatar" class="avatar">
+						    </div>
+
+						    <div class="acontainer">
+						      <label for="username" ><b style="color: #000000;">Username</b></label>
+						      <div class="profile">
+						      	<input class="form-control" type="text" placeholder="Enter Username" id="username" name="username" required>
+						  	  </div>
+
+						      <label for="password" ><b style="color: #000000;">Password</b></label>
+						      <div class="profile">
+      							<input class="form-control" type="password" placeholder="Enter Password" id="password" name="password" required>
+      						  </div>
+						        
+						      <button type="submit">Login</button>
+						      <!-- <label>
+						        <input type="checkbox" checked="checked" name="remember"> Remember me
+						      </label> -->
+						    </div>
+
+						    	<div class="acontainer" style="background-color:#f1f1f1">
+						      		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button><!-- 
+						      		<span class="psw">Forgot <a href="#">password?</a></span> -->
+						    	</div>
+					  	</form>
+					</div>
+					<button id="signup" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</button>
+					<a href="/logout"><button id="logout">Logout</button></a>
+					<a href="/account"><button id="account">Account</button></a>
+
+					<div id="id02" class="modal">
+	  
+		  				<form class="modal-content animate" action="/register" method="POST">
+						    <div class="imgcontainer">
+						      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+						      <img src="logo.jpeg" alt="Avatar" class="avatar">
+						    </div>
+
+						    <div class="acontainer">
+						      <label for="username" ><b style="color: #000000;">Username</b></label>
+						      <div class="profile">
+						      	<input class="form-control" type="text" placeholder="Enter Username" id="username" name="username" required>
+						  	  </div>
+
+						      <label for="password" ><b style="color: #000000;">New Password</b></label>
+							  <div class="profile">
+      							<input class="form-control" type="password" placeholder="Enter Password" id="password" name="password" required>
+      						  </div>
+							  
+							  <label for="re_password" ><b style="color: #000000;">Retype Password</b></label>
+						      <div class="profile">
+      							<input class="form-control" type="password" placeholder="Repeat Password" id="re_password" name="re_password" required>
+      						</div>
+						        
+						      <button type="submit">Signup</button>
+						      <!-- <label>
+						        <input type="checkbox" checked="checked" name="remember"> Remember me
+						      </label> -->
+						    </div>
+
+						    	<div class="acontainer" style="background-color:#f1f1f1">
+						      		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button><!-- 
+						      		<span class="psw">Forgot <a href="#">password?</a></span> -->
+						    	</div>
+					  	</form>
+					</div>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Lyrics</h2>
+						</header>
+						<p>Type in music name and artist name, get lyrics.</p>
+						<div class="srchbg">
+							<span class="parent">
+								<input type="text" value="" id="i_title" style="opacity: 1;" placeholder="title">
+								<input type="text" value="" id="i_artist" style="opacity: 1;" placeholder="artist">
+								<button id="search">search</button>
+								<button id="favourite">favourite</button>
+								<div class="show_lyrics">
+								</div>
+							</span>
+						</div>
+					</section>
+
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Today's Music</h2>
+						<div class="row">
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3 id="p1"></h3>
+								<a href="" id="1p" target=“_blank”> Listen </a>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h3 id="p2"></h3>
+								<a href="" id="2p" target=“_blank”> Listen </a>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<h3 id="p3"></h3>
+								<a href="" id="3p" target=“_blank”> Listen </a>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h3 id="p4"></h3>
+								<a href="" id="4p" target=“_blank”> Listen </a>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<h3 id="p5"></h3>
+								<a href="" id="5p" target=“_blank”> Listen </a>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+								<h3 id="p6"></h3>
+								<a href="" id="6p" target=“_blank”> Listen </a>
+							</article>
+						</div>
+
+						
+					</section>
+
+				<!-- Three -->
+				<!-- This section is for music sharing -->
+					<section id="three">
+						<!-- The table listing all the comments/sharing -->
+						<div id="sharing-space">
+							<h3>Sharing space</h3>
+							<table class="table table-bordered table-hover" Border="1" id="sharing-table" data-toggle="tooltip" data-placement="top" title="See the comments by others">
+								<tbody id="sharing-tbody">
+									<th>User Name</th>
+									<th>Comments</th>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- The input box for music sharing -->
+						<h2>Share your music</h2>
+						<p>Share your passion with only one click.</p>
+						<div class="row">
+							<div class="8u 12u$(small)">
+								<form method="post" action="#">
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                                        <div class="warning" id="empty-name-warning"  hidden="true"><span>Please enter name.</span></div>
+										<div class="12u$"><textarea name="message" id="message" placeholder="Anything about music." rows="4"></textarea></div>
+                                        <div class="warning" id="empty-msg-warning"  hidden="true"><span>Please enter message.</span></div>
+									</div>
+								</form>
+								<ul class="actions">
+									<button id = "comments" onclick = "addToTable()"><input type="submit" value="Send Message" /></button>
+                                    <script src="./assets/js/sharingTable.js"></script>
+								</ul>
+							</div>
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+			</footer>
+			</body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/audition.js"></script>
+			<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+      		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      		crossorigin="anonymous"></script>
+      		<script>
+			// Get the modal
+			var modal = document.getElementById('id01');
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+	    		if (event.target == modal) {
+	        		modal.style.display = "none";
+	    		}
+			}
+			if (document.cookie != ""){
+				$('#login').css("display", "none");
+				$('#signup').css("display", "none");
+			}
+			if (document.cookie == ""){
+				$('#logout').css("display", "none");
+				$('#favourite').css("display", "none");
+				$('#account').css("display", "none");
+			}
+			</script>
+</html>
